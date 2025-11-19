@@ -47,7 +47,7 @@ jobs:
 
     - name: Set up kubectl for EKS
       run: |
-        aws eks update-kubeconfig --name your-cluster-name --region ${{ env.AWS_REGION }}
+        aws eks update-kubeconfig --name EKS-CLUSTER --region ${{ env.AWS_REGION }}
 
     - name: Deploy to EKS
       run: kubectl apply -f k8s/deployment.yaml
