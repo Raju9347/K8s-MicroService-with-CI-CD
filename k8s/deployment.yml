@@ -15,5 +15,6 @@ spec:
       containers:
       - name: hello-world
         image: your-dockerhub-username/hello-world:latest
+        imagePullPolicy: ecr-secret
         ports:
         - containerPort: 8080
